@@ -93,7 +93,7 @@ npm run dev
 ## 8. Despliegue
 
 Enlace de la aplicación:
-[PENDIENTE DE PUBLICAR]
+https://recetas-de-mi-abuela.vercel.app
 
 ## 9. Autoría
 
