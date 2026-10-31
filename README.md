@@ -20,10 +20,11 @@ plataforma digital sencilla y atractiva.
 ## 2. Integrantes del grupo
 
 - Grupo: Reto 5
-- Integrante 1: [Nombre completo]
-- Integrante 2: [Nombre completo]
-- Integrante 3: [Nombre completo]
-- Integrante 4: [Nombre completo]
+- Integrante 1: [Stanley Rosario Hernandez] [100578322]
+- Integrante 2: [Sadhely Batista Lora] [100614047]
+- Integrante 3: [Engels Mejia] [100551802]
+- Integrante 4: [Bilionel Fernandez] [100386328]
+- Integrante 5: [Enmanuel De Jesus Segura] [100663358]
 
 ## 3. Tecnologías utilizadas
 
@@ -98,3 +99,4 @@ Enlace de la aplicación:
 
 Proyecto académico desarrollado para representar
 y preservar la cultura gastronómica dominicana.
+
