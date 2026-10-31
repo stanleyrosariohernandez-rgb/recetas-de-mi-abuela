@@ -139,6 +139,12 @@ function App() {
             setCategory={setCategory}
           />
 
+          <p className="results-count">
+            {filteredRecipes.length} recetas encontradas
+          </p>
+
+          
+
           <div className="recipes-grid">
 
             {filteredRecipes.length > 0 ? (

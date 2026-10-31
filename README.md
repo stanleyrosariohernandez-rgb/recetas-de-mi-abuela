@@ -1,16 +1,100 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🥘 Recetas de mi abuela
 
-Currently, two official plugins are available:
+### Sabores que cuentan historias, recetas que nunca se olvidan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 1. Descripción del proyecto
 
-## React Compiler
+Recetas de mi abuela es una aplicación web interactiva
+desarrollada con React.js que busca preservar y compartir
+la tradición gastronómica de la República Dominicana.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto está inspirado en las recetas familiares de
+una señora de San Juan, incluyendo preparaciones como
+el chacá, moro dominicano, pastelón y dulce de leche.
 
-## Expanding the ESLint configuration
+Su propósito es conservar la memoria culinaria y facilitar
+el acceso a las recetas tradicionales mediante una
+plataforma digital sencilla y atractiva.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 2. Integrantes del grupo
+
+- Grupo: Reto 5
+- Integrante 1: [Nombre completo]
+- Integrante 2: [Nombre completo]
+- Integrante 3: [Nombre completo]
+- Integrante 4: [Nombre completo]
+
+## 3. Tecnologías utilizadas
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Git
+- GitHub
+
+## 4. Funcionalidades
+
+- Visualización de recetas tradicionales.
+- Buscador de recetas.
+- Filtros por categorías.
+- Consulta de ingredientes y preparación.
+- Sistema de recetas favoritas.
+- Guardado de favoritos en localStorage.
+- Modo claro y modo oscuro.
+- Diseño adaptable a dispositivos móviles.
+- Animaciones CSS.
+
+## 5. Organización del proyecto
+
+- components/: componentes reutilizables de React.
+- data/: información de las recetas.
+- public/images/: imágenes del recetario.
+- App.jsx: componente principal.
+- styles.css: estilos de la aplicación.
+
+## 6. ¿Qué aprendimos?
+
+Durante el desarrollo aprendimos a crear aplicaciones
+utilizando React.js y JavaScript.
+
+También practicamos la creación de componentes
+reutilizables, el manejo de estados con useState,
+el uso de useEffect y la comunicación entre componentes
+mediante propiedades.
+
+Aprendimos a implementar búsquedas, filtros,
+favoritos, almacenamiento local y temas visuales.
+
+Además, utilizamos Git para registrar los avances
+y mantener un historial de cambios del proyecto.
+
+## 7. Instalación y ejecución
+
+Clonar el repositorio:
+
+git clone [ENLACE_DEL_REPOSITORIO]
+
+Entrar en la carpeta:
+
+cd recetas-de-mi-abuela
+
+Instalar dependencias:
+
+npm install
+
+Iniciar el proyecto:
+
+npm run dev
+
+## 8. Despliegue
+
+Enlace de la aplicación:
+[PENDIENTE DE PUBLICAR]
+
+## 9. Autoría
+
+Proyecto académico desarrollado para representar
+y preservar la cultura gastronómica dominicana.

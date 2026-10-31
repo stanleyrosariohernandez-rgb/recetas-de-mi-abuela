@@ -904,3 +904,54 @@ button {
 
 }
 
+
+/* MEJORAS DE EXPERIENCIA */
+
+.results-count {
+  text-align: center;
+  color: #725E4C;
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+
+.dark-mode .results-count {
+  color: #C3D1E5;
+}
+
+.recipe-overlay {
+  overscroll-behavior: contain;
+}
+
+.recipe-modal {
+  overscroll-behavior: contain;
+}
+
+.close-button:focus-visible,
+.recipe-button:focus-visible,
+.theme-button:focus-visible,
+.category-button:focus-visible,
+.navbar a:focus-visible,
+.hero-button:focus-visible {
+  outline: 3px solid #B76A36;
+  outline-offset: 4px;
+}
+
+.search-container:focus-within {
+  outline: 2px solid #B76A36;
+  outline-offset: 3px;
+}
+
+.dark-mode .search-container:focus-within {
+  outline-color: #00F5FF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

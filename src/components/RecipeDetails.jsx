@@ -1,13 +1,49 @@
 
+import { useEffect } from "react";
+
 function RecipeDetails({ recipe, onClose }) {
+
+  useEffect(() => {
+
+    if (!recipe) return;
+
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+
+  }, [recipe, onClose]);
+
   if (!recipe) {
     return null;
   }
 
   return (
-    <div className="recipe-overlay">
+    <div
+      className="recipe-overlay"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) {
+          onClose();
+        }
+      }}
+    >
 
-      <section className="recipe-modal">
+      <section
+        className="recipe-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="recipe-title"
+      >
 
         <button
           className="close-button"
@@ -29,19 +65,15 @@ function RecipeDetails({ recipe, onClose }) {
             {recipe.category}
           </span>
 
-          <h2>{recipe.name}</h2>
+          <h2 id="recipe-title">{recipe.name}</h2>
 
           <p>{recipe.description}</p>
 
           <div className="details-information">
 
-            <span>
-              🕒 {recipe.time}
-            </span>
+            <span>🕒 {recipe.time}</span>
 
-            <span>
-              🍽️ {recipe.servings} porciones
-            </span>
+            <span>🍽️ {recipe.servings} porciones</span>
 
           </div>
 
@@ -51,9 +83,7 @@ function RecipeDetails({ recipe, onClose }) {
 
             <ul>
               {recipe.ingredients.map((ingredient, index) => (
-                <li key={index}>
-                  {ingredient}
-                </li>
+                <li key={index}>{ingredient}</li>
               ))}
             </ul>
 
@@ -65,9 +95,7 @@ function RecipeDetails({ recipe, onClose }) {
 
             <ol>
               {recipe.preparation.map((step, index) => (
-                <li key={index}>
-                  {step}
-                </li>
+                <li key={index}>{step}</li>
               ))}
             </ol>
 
@@ -90,3 +118,4 @@ function RecipeDetails({ recipe, onClose }) {
 }
 
 export default RecipeDetails;
+
