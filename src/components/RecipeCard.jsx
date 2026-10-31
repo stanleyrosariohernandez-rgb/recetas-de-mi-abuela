@@ -1,13 +1,34 @@
 
-function RecipeCard({ recipe, onViewRecipe }) {
+function RecipeCard({
+  recipe,
+  onViewRecipe,
+  isFavorite,
+  onToggleFavorite
+}) {
   return (
     <article className="recipe-card">
 
-      <img
-        src={recipe.image}
-        alt={recipe.name}
-        className="recipe-image"
-      />
+      <div className="recipe-image-container">
+
+        <img
+          src={recipe.image}
+          alt={recipe.name}
+          className="recipe-image"
+        />
+
+        <button
+          className={
+            isFavorite
+              ? "favorite-button selected"
+              : "favorite-button"
+          }
+          onClick={() => onToggleFavorite(recipe.id)}
+          aria-label="Agregar o quitar de favoritos"
+        >
+          {isFavorite ? "❤️" : "🤍"}
+        </button>
+
+      </div>
 
       <div className="recipe-content">
 
@@ -21,9 +42,7 @@ function RecipeCard({ recipe, onViewRecipe }) {
 
         <div className="recipe-footer">
 
-          <span>
-            🕒 {recipe.time}
-          </span>
+          <span>🕒 {recipe.time}</span>
 
           <button
             className="recipe-button"
@@ -41,3 +60,4 @@ function RecipeCard({ recipe, onViewRecipe }) {
 }
 
 export default RecipeCard;
+
